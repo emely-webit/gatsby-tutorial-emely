@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import img from "../images/image-4.jpg"
 import Image from "gatsby-image"
-import images from "../pages/images"
 
 const getImages = graphql`
   {
@@ -37,7 +36,7 @@ const Images = () => {
     <section className="images">
       <article className="single-image">
         <h3>basic image</h3>
-        <img src={img} width="100%" />
+        <img src={img} width="100%" alt="test" />
         <h2>content</h2>
       </article>
       <article className="single-image">
